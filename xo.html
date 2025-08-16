@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>games</title>
+    <link rel="stylesheet" href="./xo.css">
+</head>
+<body>
+<div class="start-screen">
+    <h1> Enter player Details</h1>
+
+    <input type="text" name="player1Name" placeholder="player1Name">
+    <input type="text" name="player2Name" placeholder="player2Name">
+    <select id="player1symbol" >
+        <option value="x">x</option>
+        <option value="o">o</option>
+    </select>
+    <button>start game</button>
+
+</div>  
+    <div id="game-screen" style="display: none;">
+        <h2 id="roung-info">Round 1 of 3</h2>
+        <p id="turn-info"></p>
+        <p id="score"></p>
+
+    </div>
+    <div id="end-screen"  style="display: none;" >
+        <h2 id="winner"></h2>
+        <button>play again</button>
+
+    </div>
+<script src="./xo.js"></script>
+
+</body>
+</html>
